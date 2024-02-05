@@ -15,7 +15,7 @@ class Player(pygame.sprite.Sprite):
 
   def __init__(self):
     pygame.sprite.Sprite.__init__(self)
-    image = pygame.image.load("H:\James School Work\A Level\Comp Sci\Coding\Python Coding\Evasion Game\EvasionGamePlayer.png").convert()                 #Add new file
+    image = pygame.image.load("EvasionGamePlayer.png").convert()                 #Add new file
     image = pygame.transform.scale(image, (50, 50))
     self.surf = image
     self.rect = self.surf.get_rect(center=(screen_width / 2,screen_height / 2))
@@ -40,7 +40,7 @@ class enemy(pygame.sprite.Sprite):
 
   def __init__(self):
     pygame.sprite.Sprite.__init__(self)
-    image = pygame.image.load("H:\James School Work\A Level\Comp Sci\Coding\Python Coding\Evasion Game\EvasionGameEnemy.png").convert()                     #Add new file
+    image = pygame.image.load("EvasionGameEnemy.png").convert()                     #Add new file
     image = pygame.transform.scale(image, (50, 50))
     self.surf = image
     area = random.choice(["t", "b", "r", "l"])
@@ -114,7 +114,7 @@ all_sprites.add(player)
 running = True
 timer = 0
 
-deathscreen = pygame.image.load("H:\James School Work\A Level\Comp Sci\Coding\Python Coding\Evasion Game\EvasionGameDeathScreen.png").convert()   # Add new file
+deathscreen = pygame.image.load("EvasionGameDeathScreen.png").convert()   # Add new file
 deathscreen = pygame.transform.scale(deathscreen,(screen_width, screen_height))
 
 alive = True
